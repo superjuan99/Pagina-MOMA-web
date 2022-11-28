@@ -1,0 +1,2947 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+--color-primario: #E63C3C; 
+--color-segundario: #1B1B1B; 
+--color-terciario: #FEB800; 
+--color-cuaternario: #F5F2FF;
+--color-quinto: #C8BDEB;
+}
+
+/*-------------------------------------- modificadores generales  --------------------------------------*/
+
+body{
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    list-style-type: none;    
+}
+
+strong{
+    color:var(--color-primario);
+    text-decoration: none;
+}
+
+h1{ font-size: 24px;
+	font-weight: 900;
+}
+
+h2{ font-size: 18px; 
+	font-weight: 400;
+}
+
+h3{ font-size: 24px;
+	font-weight: 900;
+    padding-left: 20px;
+ }
+
+h4{ font-size: 18px; 
+	font-weight: 700;
+}
+
+h5{ font-size: 25px;
+    font-weight: 700;
+}
+
+h6{ font-size: 12px;
+	font-weight: 300;
+    margin: 0%;
+}
+
+p{ 
+    font-size: 15px;
+    font-weight: 400;
+ }
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: revert;
+    color: red;
+}
+
+button {
+    background-color: var(--color-primario);
+    border-radius: 80px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 12px;
+    height: 32px;
+    padding: 0 10px;
+    margin: 5px;
+    cursor: pointer;
+    border: 3px solid transparent; 
+}
+       
+button:hover {
+    background-color: transparent;
+    border: 3px solid var(--color-primario);
+    color: var(--color-primario);
+}
+
+
+ .button {
+    width: fit-content;
+    height: 10px;
+    background:var(--color-primario);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    padding: 30px 5px;
+    color: var(--color-segundario);
+    font-size: 14px;
+}
+
+.btn-bannerhome{
+    width: 92px;
+    height: 32px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    background-color: var(--color-primario);
+}
+
+/*---------------------------- NAV ----------------------------*/
+
+nav .logo-movil{
+    display: none;
+}
+
+
+
+nav {
+    background: white;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 57px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav .mainMenu li a {
+    display: flex;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-segundario);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav .mainMenu li a:hover {
+    color: var(--color-primario);
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/*---------------------------- MAIN ----------------------------*/
+
+main{
+    width: 100%;
+    height: 338px;
+}
+.imagen-fondo{
+    width: 100%;
+    height: 332px;
+    background-image: url("img/imagen\ fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-home{
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 40px;
+    text-shadow: 2px 2px 7px black;  
+}
+
+.banner-home h1{
+    margin-bottom: 30px;
+    
+}
+
+.banner-home h2{
+    margin-bottom: 31px;
+    width: 80%;
+}
+
+/*---------------------------- Aside ----------------------------*/
+aside {
+    display: none;
+}
+
+/*---------------------------- Sección 1 HOME - areas ----------------------------*/
+
+.nuestras-areas{
+   
+}
+.separador {
+    width: 204px;
+    height: 5px;
+    background-color: var(--color-terciario);
+    margin-top: 4em;
+    margin-bottom: 0em;
+}
+
+.nuestras-areas h3{
+    margin-top: 15px;
+    
+}
+
+.areas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+
+.a-saludmental {
+    width: 186px;
+    height: 226px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 14px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.a-saludmental img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.a-saludmental a {
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.areas article{
+    margin: 5px ;
+    margin-top: 10px;
+}
+
+.btn-bannerhome:hover{
+    color: white;
+    border: 2px solid white;
+}
+
+/*---------------------------- TEXTOS ----------------------------*/
+
+.textos {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*---------------------------- Sección 2 HOME te acaban de diagnosticar ----------------------------*/
+
+
+.te-acaban-diagnosticar h3{
+    margin-top: 15px;
+}
+
+.te-acaban-diagnosticar p {
+    margin-top: 3em;
+    margin-bottom: 2em;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.contenedor-articulos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+.contenedor-articulos article{
+    background-color: var(--color-primario);
+    width: 182px;
+    height: 179px;
+    border-radius: 40px 40px 40px 0px;
+    margin: 10px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-articulos article p {
+    margin-top: 5px;
+    text-align: center;
+    padding: 0 10px;
+    color: var(--color-cuaternario);
+
+}
+.contenedor-articulos article h4{
+    margin-top: -20px;
+    color: var(--color-cuaternario);
+}
+
+.btn-diagnostico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-te-acaban-diagnosticar {
+    width: 276px;
+    height: 38px;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/*---------------------------- Sección 3 HOME - Comunidad  ----------------------------*/
+
+.streaming{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 2em;
+    padding-top: 20px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.separador-comunidad {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.comunidad{ 
+    background-color:  var(--color-cuaternario);
+}
+
+.comunidad h4{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+}
+
+.comunidad p {
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.video{
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.comunidad video{
+    width: 100%;
+}
+
+.contenedor-calidad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.calidad-vida{
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:40px;
+    margin-top: 20px;
+}
+
+.calidad-vida figure{
+    width: 100%;
+    height: 112px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.calidad-vida figure img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.calidad-vida h3{
+padding: 0 5px;
+font-size: 18px;
+}
+
+.calidad-vida p{
+padding: 0 5px;
+}
+
+.calidad-vida h6{
+    padding: 0 5px;
+}
+
+.btn-streaming {
+    display: none;
+    display: contents;
+    display: flex;
+    justify-content: center;
+}
+
+/*---------------------------- Sección 4 -  HOME Novedades  ----------------------------*/
+
+
+.novedades{
+    
+}
+
+.separador-novedades{
+    margin-bottom: 10px;
+}
+
+
+.contenedor-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.novedades-abcd{
+    width: 179px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    background: var(--color-cuaternario);
+    border-radius: 20px 20px 0px 0px;
+}
+
+.novedades-abcd figure{
+    width: 179px;
+    height: 112px;
+    overflow: hidden;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.novedades-abcd figure img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.novedades-abcd h4{
+    margin-bottom: 7px;
+    padding: 0 7px;
+}
+
+.novedades-abcd p {
+    margin-bottom: 7px;
+    padding: 0 7px;
+}
+
+.novedades-abcd h6 {
+    margin-bottom: 7px;
+    padding: 0 7px;
+}
+
+.leer-mas-novedades{
+    color: var(--color-primario);
+    text-align: right;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.leer-mas-novedades:hover {
+    text-decoration-line: underline;
+}
+
+/*---------------------------- Sección 5 - HOME  DONA  ----------------------------*/
+
+.dona{
+    margin-top: 30px;
+    padding-top: 1px;
+    margin-bottom: 80px;
+}
+
+.dona h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.dona img{
+    margin-left: 20px; 
+    margin-bottom: -10px;
+}
+
+.dona p{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.dona button{
+    margin: 0 20px;
+    margin-bottom: 50px;
+}
+
+.imagen-formulario {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.dona figure {
+    width: 368px;
+    height: 352px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: auto;
+    background-image: url(img/imagen\ manos.png);
+    background-size: cover;
+}
+
+.dona figure img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.dona-contenedor{
+    background-color: var(--color-cuaternario);
+    padding-top: 50px;
+}
+
+.dona-contenedor form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.dona-formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 50px;
+    border: 2px solid var(--color-segundario);
+    background: white;
+}
+
+#enviar{
+    background: var(--color-primario);
+    color: white;
+    max-width: 50%;
+    border-radius: 60px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    margin-top: 20px;
+}
+
+#enviar:hover{
+    background: transparent;
+    border: 2px solid var(--color-primario);
+    color: var(--color-primario);
+    vertical-align: bottom;
+}
+
+.dona-formulario a{
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--color-primario);
+}
+
+.dona-formulario a:hover {
+    text-decoration: underline;
+}
+
+/*---------------------------- Sección 6 - HOME CONTACTANOS  ----------------------------*/
+
+
+.contactanos{
+    background: var(--color-cuaternario);
+    margin-top: 20px;
+    padding-top: 1px;
+}
+
+.contactanos h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.contactanos img {
+    margin-left: 20px;
+    margin-bottom: -5px;
+
+}
+
+.contactanos p {
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.imagen-contactanos{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.contactanos figure {
+    width: 368px;
+    height: 263px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    margin: auto;
+    background-image: url(img/contactanos\ imagen.png);
+    background-size: cover;
+}
+
+.contactanos figure img {
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.contactanos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contactanos-formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.contactanos-formulario form{
+    padding: 0 20px;
+}
+
+
+textarea{
+    min-height: 187px;
+    max-height: 187px;
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 25px;
+}
+
+
+/*---------------------------- Footer ----------------------------*/
+
+footer{
+    background-color: var(--color-quinto);
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contacto figure{
+    width: 54px;
+    height: 33px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.contacto figure img{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.contacto p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacto a{
+    color: var(--color-primario);
+    text-decoration: none;
+}
+
+.contacto a:hover{
+    text-decoration: underline;
+}
+
+.logos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right:10px ;
+}
+
+.logos p{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logos figure img{
+    margin: 4px;
+}
+
+.separador-footer{
+    width: 70%;
+    height: 3px;
+    background-color: var(--color-segundario);
+    margin: auto;
+}
+
+.legales{
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+/*---------------------------- Media Query  ----------------------------*/
+
+/*----------- NAV Responsive -------------*/
+
+@media (max-width:980px) {
+
+    nav .logo-escritorio{
+        display: none;
+    }
+
+    nav .logo-movil {
+        display: revert;
+    }
+
+    nav {
+        width: 100%;
+        top: 0;
+        padding: 0 10px;
+    }
+
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--color-cuaternario);
+        transition: top 1s ease;
+        display: none;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: var(--color-segundario);
+        padding: 0 10px;
+    }
+
+    nav .openMenu {
+        display: block;
+        color: var(--color-segundario);
+    }
+
+    nav .mainMenu li {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .mainMenu a {
+        width: 100%;
+        padding: 10px;
+        height: 90px;
+        width: 100%;
+        padding: 20px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav .mainMenu li a:hover {
+        background: var(--color-primario);
+        color: var(--color-cuaternario);
+        font-size: 1.6rem;
+    }
+}
+
+/*----------- Body Responsive -------------*/
+
+@media (min-width:980px) {
+
+h1 {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 900;
+    padding-left: 80px;
+}
+
+h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0%;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+button {
+    background-color: var(--color-primario);
+    border-radius: 80px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    height: 48px;
+    width: 192px;
+    margin: 5px;
+}
+
+
+.button {
+    width: fit-content;
+    height: 10px;
+    background: var(--color-primario);
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    padding: 30px 5px;
+    color: var(--color-segundario);
+    font-size: 14px;
+}
+
+.btn-bannerhome {
+    width: 135px;
+    height: 48px;
+    border-radius: 40px;
+    border: none;
+    padding: 5px;
+    background-color: var(--color-primario);
+}
+
+/*----------- MAIN responsive -------------*/
+
+main {
+    height: 769px;
+    
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-home {
+    margin-bottom: 120px;
+    width: 60%;
+}
+
+.banner-home h2 {
+    width: 100%;
+}
+
+.separador {
+    width: 244px;
+    height: 8px;    
+}
+
+/*---------------------------- Aside Responsive ----------------------------*/
+aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    right: 0;
+    padding: 0 10px;
+}
+
+.icono-aside-contenedor {
+    width: 66px;
+    height: 66px;
+    background: red;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 16px black;
+    margin-top: 15px;
+}
+
+.icono-aside-contenedor:hover {
+    background: black;
+    cursor: pointer;
+}
+
+.icono-aside-contenedor img {
+    width: 50%;
+    height: 50%;
+}
+
+/*----------- Seccion 1 - HOME Responsive -------------*/
+
+.a-saludmental {
+    width: 297px;
+    height: 364px;
+    border-radius: 40px;
+}
+
+.nuestras-areas h3 {
+    padding: 0 80px;
+}
+
+.areas {
+    padding: 0 50px;
+}
+
+.a-saludmental a {
+    font-size: 30px;
+}
+
+
+/*---------------------------- Sección 2 - HOME  te acaban de diagnosticar - RESPONSIVE ----------------------------*/
+
+.te-acaban-diagnosticar h3 {
+    padding: 0 80px;
+}
+
+.te-acaban-diagnosticar p {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    padding: 0 80px;
+}
+
+.contenedor-articulos article {
+    border-radius: 70px 70px 70px 0px;
+    width: 296px;
+    height: 291px;
+}
+
+.contenedor-articulos{
+    padding: 0 50px;
+}
+
+.btn-te-acaban-diagnosticar {
+    width: 330px;
+    height: 48px;
+    padding: 5px 5px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+/*---------------------------- Sección 3 - HOME  Comunidad Responsive  ----------------------------*/
+
+.streaming {
+    font-size: 25px;
+    padding-left: 80px;
+}
+
+.comunidad h4 {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.comunidad p {
+    padding-left: 80px;
+    padding-right: 40%;
+}
+
+.video {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.contenedor-calidad {
+    padding: 0 50px;
+}
+
+.calidad-vida {
+    width: 657px;
+}
+
+.calidad-vida figure {
+    height: 410px;
+}
+
+.calidad-vida h3 {
+    font-size: 30px;
+}
+
+.calidad-vida p {
+    padding: 0 5px;
+}
+
+.btn-te-acaban-diagnosticar2 {
+    width: 286px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+/*---------------------------- Sección 4 - HOME  Novedades - Responsive  ----------------------------*/
+
+.contenedor-articles {
+    padding: 0 50px;
+}
+
+.novedades-abcd {
+    width: 297px;
+    border-radius: 50px 50px 0px 0px;
+    overflow: hidden;
+}
+
+.novedades-abcd figure {
+    width: 100%;
+    height: 184px;
+    border-radius: 50px;
+}
+
+.novedades-abcd h4 {
+    padding: 0 20px;
+}
+
+.novedades-abcd p {
+    padding: 0 30px;
+}
+
+.novedades-abcd h6 {
+    padding: 0 30px;
+}
+
+.leer-mas-novedades {
+    padding: 10px;
+    width: 30%;
+    margin-left: auto;
+}
+
+/*---------------------------- Sección 5 - HOME  DONA  ----------------------------*/
+
+.dona h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 80px;
+}
+
+.dona img {
+    margin-left: 20px;
+    margin-bottom: -10px;
+    width: 64px;
+    height: 62px;
+}
+
+.dona p {
+    padding: 0 80px;
+}
+
+.dona button {
+    margin: 0 80px;
+    margin-bottom: 50px;
+}
+
+.dona figure {
+    width: 80%;
+    height: 416px;
+    border-radius: 60px;
+}
+
+.dona-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40 80px;
+}
+
+.imagen-formulario {
+    width: 40%;
+}
+
+.dona-contenedor form {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-start;
+    flex-direction: row;
+}
+
+.dona-formulario form input{
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+
+
+.dona-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contenedor-formulario-1{
+    width: 50%;
+    padding: 0 20px;
+}
+
+.contenedor-formulario-2{
+    width: 50%;
+    padding: 0 20px;
+}
+
+#enviar {
+    max-width: 30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.dona-formulario a {
+    margin-bottom: 0px;
+    margin: 0 20px;
+}
+
+
+/*---------------------------- Sección 6 - HOME  CONTACTANOS Responsive  ----------------------------*/
+
+
+.contactanos h3 {
+    margin: 20px 0;
+}
+
+.contactanos img {
+    margin-left: 20px;
+    margin-bottom: -5px;
+    width: 60px;
+    height: 42px;
+}
+
+.contactanos p {
+    padding: 0 80px;
+    margin-bottom: 60px;
+    padding-right: 40%;
+}
+
+.contactanos figure {
+    width: 80%;
+    height: 319px;
+    border-radius: 60px;
+}
+
+.contactanos-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40 80px;
+}
+
+.imagen-contactanos {
+    width: 40%;
+}
+
+.contactanos-contenedor form {
+    width: 100%;
+    padding: 0px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    Justify-content: flex-start;
+    flex-direction: row;
+}
+
+.contactanos-formulario form input {
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    border-radius: 20px;
+}
+
+.contactanos-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.contenedor-form-contacto1 {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.contenedor-form-contacto2 {
+    width: 50%;
+    padding: 0 20px;
+}
+
+textarea {
+    min-height: 215px;
+    max-height: 215px;
+}
+
+/*---------------------------- Footer ----------------------------*/
+
+.contenedor-footer {
+    padding: 0 80px;
+}
+
+.contacto figure {
+    width: 126px;
+    height: 75px;
+}
+
+
+.contacto p {
+    font-size: 20px;
+}
+
+.logos p {
+    font-size: 25px;
+}
+
+.logos figure img {
+    width: 58px;
+    height: 58px;
+    cursor: pointer;
+}
+
+.separador-footer {
+    width: 50%;
+}
+
+}
+
+/*---------------------------- Pagina 2 Tratamientos ----------------------------*/
+
+.imagen-fondo-recursos {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/banner\ recursos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*---------------------------- Pagina 2 - Seccion 1 Tratamientos ----------------------------*/
+
+.imagen-fondo-recursos .banner-home h1{
+    margin-top: 20px;
+}
+
+.farmacos .separador{
+    margin: 20px 0;
+}
+.contenedor-texto-far{
+    max-width: 657px;
+}
+
+.contenedor-texto-far p{
+    padding: 0 20px;
+    margin:20px 0;
+}
+
+.contenedor-texto-far button{
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+.contenedor-farmacos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-farmacos img{
+    width:90%;
+    max-width: 547px;
+    border-radius: 50px;
+}
+
+
+/*---------------------------- Pagina 2 - Seccion 2 Tratamientos ----------------------------*/
+
+.tratamiento-rea{
+    margin-top: 30px;
+}
+
+.tratamiento-rea .separador {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.tratamiento-rea p{
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.tratamiento-rea button{
+    margin: 20px;
+}
+
+.contenedor-tratamiento-rea{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor-tratamiento-rea img{
+    width: 186px;
+    height: 204px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+
+/*---------------------------- Pagina 2 - Tratamientos - Responsive ----------------------------*/
+
+
+@media (min-width:980px) {
+.imagen-fondo-recursos {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-texto-far h3 {
+        padding: 0 0;
+    }   
+
+    .contenedor-texto-far p {
+        padding: 0 0;
+    }
+
+    .contenedor-texto-far button{
+        width: 240px;
+        margin-left: 0px;
+    }
+
+    .contenedor-farmacos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        
+    }
+/*-- pagina 2 Seccion 2 Responsive --*/
+
+    .tratamiento-rea p{
+        padding: 0 80px;
+        padding-right: 550px;
+
+    }
+    .tratamiento-rea button{
+        margin-left: 80px;
+    }
+    .contenedor-tratamiento-rea{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+    Justify-content: flex-start;
+    padding: 0 80px;
+    }
+
+    .contenedor-tratamiento-rea img{
+    width: 317px;
+    height: 346px;
+    margin-right: 20px;
+    }
+
+}
+
+
+/*---------------------------- Pagina 3 Contacto ----------------------------*/
+
+.imagen-fondo-contacto {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/main\ contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*---------------------------- Pagina 3 Contacto seccion 2 ----------------------------*/
+
+.contacto-novedades h3{
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.contacto-novedades .icono-contactanos{
+    width: 50px;
+    margin-left: 20px;
+}
+
+.contacto-novedades p{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.contactanos-novedades-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto-novedades figure{
+    width: 386px;
+    height: 283px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    background-image: url(img/persona\ usando\ pc.jpg);
+    background-size: cover;
+}
+
+
+/*---------------------------- Pagina 3 Contacto Responsive ----------------------------*/
+
+@media (min-width:980px) {
+.imagen-fondo-contacto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-novedades .contactanos-novedades-contenedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.contacto-novedades figure{
+    margin-top: 70px;
+    width: 773px;
+    height: 446px;
+    margin: 0;
+    margin-left: 35px;
+    
+}
+
+.contacto-novedades p{
+    padding: 0 80px;
+}
+
+.contacto-novedades .contactanos-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    width: 35%;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.contacto-novedades .contenedor-form-contacto1 {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.contacto-novedades .icono-contactanos {
+    width: 70px;
+}
+
+}
+
+/*---------------------------- Pagina 4 Dona ----------------------------*/
+.imagen-fondo-dona {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/Banner\ dona.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.colaboracion{
+    padding: 0 20px;
+}
+
+.colaboracion p{
+    margin-bottom: 36px;
+    margin-top: 20px;
+}
+
+.colaboracion ul{
+    padding: 0 20px;
+}
+
+.colaboracion li{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    color: var(--color-primario);
+}
+
+.otras-formas{
+    padding: 0 20px;
+}
+
+.otras-formas .separador{
+    margin-left: -20px;
+}
+
+.otras-formas h3{
+    padding-left: 0px;
+    margin: 20px 0;
+}
+
+.otras-formas p{
+    margin-bottom: 20px;
+}
+
+.otras-formas-donar{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: space-between;
+    justify-content: center;
+
+}
+
+.otras-formas-donar article{
+    background: var(--color-cuaternario);
+    margin: 20px 0;
+    text-align: center;
+    width: 240px;
+    height: 316px;
+    padding: 10px;
+    border-radius: 40px;
+    
+}
+
+.donar-cont h5{
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--color-primario);
+}
+
+.otras-formas-donar p {
+    font-size: 15px;
+    padding: 0 0;
+}
+
+.preguntas-dona{
+    padding: 0 20px;
+}
+
+.preguntas-dona h3 {
+    padding-left: 0px;
+    margin: 20px 0;
+    display: inline-block;
+    margin-bottom: 60px;
+}
+
+.preguntas-dona img{
+    display: inline-block;
+    margin-bottom: -10px;
+}
+
+.preguntas-dona details{
+    margin-bottom: 40px;
+    border-top: 2px rgba(0, 0, 0, 0.479) solid;
+    border-bottom: 2px rgba(0, 0, 0, 0.479) solid;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.preguntas-dona details summary{
+    cursor: pointer;
+}
+
+
+.preguntas-dona details p{
+    margin-top: 20px;
+}
+
+.imagen-fondo-dona h1{
+    margin-top: 40px;
+}
+
+
+/*---------------------------- Pagina 4 Dona Responsive ----------------------------*/
+
+@media (min-width:980px) {
+
+.imagen-fondo-dona {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.colaboracion {
+    padding: 0 80px;
+    padding-right: 40%;
+}
+
+.colaboracion li {
+    font-size: 20px;
+}
+
+.otras-formas h3{
+    padding: 0 50px;
+}
+
+.otras-formas p {
+    padding: 0 50px;
+}
+
+.otras-formas-donar article {
+    background: var(--color-cuaternario);
+    margin: 20px 0;
+    text-align: left;
+    width: 433px;
+    height: 429px;
+    padding: 20px;
+    border-radius: 40px;
+
+}
+
+.otras-formas-donar h3{
+    padding: 0 0;
+}
+
+.otras-formas-donar p {
+    font-size: 20px;
+    padding: 0 0;
+}
+
+.otras-formas-donar h5 {
+    font-size: 25px;
+}
+
+.otras-formas-donar {
+    justify-content: space-around;
+
+}
+
+.preguntas-dona {
+    padding: 0 80px;
+}
+
+.preguntas-dona img{
+    width: 56px;
+    margin-left: 20px;
+}
+
+.preguntas-dona details {
+    font-size: 30px;
+}
+
+.preguntas-dona details p {
+    font-size: 20px;
+}
+
+.preguntas-dona h3{
+    margin-bottom: 70px;
+}
+
+
+}
+
+
+/*---------------------------- Pagina 5 Esclerosis Multiple ----------------------------*/
+
+.imagen-fondo-multiple {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/Banner\ esclerosis\ multiple.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen-fondo-multiple h1{
+    margin-top: 30px;
+}
+
+.multi-bloque1{
+    padding: 0 20px;
+}
+
+.multi-bloque1 iframe{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.multi-bloque1 img{
+    margin:30px 0;
+    width: 100%;
+}
+
+.multicontenedor1 h6 {
+    margin-bottom: 10px;
+}
+
+.imagenes-sintomas h6{
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.contenedor-multitratamientos h6{
+    margin-bottom: 10px;
+}
+
+.lineasistema1 {
+    height: 4px;
+    width: 100%;
+    background: var(--color-primario);
+    margin: 0 0;
+    margin-top: 0px;
+}
+
+.linea-sintomas {
+    height: 4px;
+    width: 100%;
+    background: var(--color-primario);
+    margin: 0 0;
+}
+
+.linea-tratamientos {
+    height: 4px;
+    width: 100%;
+    background: var(--color-primario);
+    margin: 0 0;
+}
+
+.btn-sintomas {
+    display: none;
+}
+
+.multi-diagnostico{
+    padding: 0 20px;
+}
+
+.multi-diagnostico h3{
+    padding: 0 0;
+    margin: 20px 0;
+}
+
+.imagenes-sintomas{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Flex-wrap: wrap;
+}
+
+.imagenes-sintomas img{
+    width: 152px;
+    height: 225px;
+    border-radius: 40px;
+    margin: 0 10px;
+}
+
+.btn-sintomas{
+    margin: 30px 0;
+}
+
+.multi-evolucion{
+    padding: 0 20px;
+}
+
+.multi-evolucion h3{
+    padding: 0 0;
+    margin: 20px 0;
+}
+
+.multi-evolucion p{
+    margin: 20px 0;
+}
+
+.multi-evolucion img{
+    width: 100%;
+}
+
+.multi-tratamientos{
+    padding: 0 20px;
+}
+
+.multi-tratamientos .separador{
+    margin-left: -20px;
+}
+
+.multi-tratamientos h3{
+    margin: 20px 0;
+    padding: 0 0;
+}
+
+.btn-tratamientos{
+    margin: 30px 0;
+}
+
+.multi-tratamientos img{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.multi-atencion{
+    padding: 0 20px;
+}
+
+.multi-atencion .separador{
+    margin-left: -20px;
+}
+
+.multi-atencion h3{
+    padding: 0 0;
+    margin: 20px 0;
+}
+
+.multi-atencion p{
+    margin-bottom: 20px;
+}
+
+
+.mapa{
+    margin-top: 20px;
+    width: 100%;
+    height: 267px;
+}
+
+
+
+/*---------------------------- Pagina 5 Esclerosis Multiple - Responsive ----------------------------*/
+@media (min-width:980px){
+
+
+.imagen-fondo-multiple {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.multi-bloque1 iframe {
+    height: 594px;
+    width: 95%;
+    margin-left: 0;
+}
+
+.multi-bloque1 {
+    padding: 0 80px;
+}
+
+.multi-bloque1 p{
+    padding-right: 43%;
+}
+
+.multi-bloque1 img {
+    width: 57%;
+    margin-bottom: 0;
+}
+.multicontenedor1{
+    display: flex;
+    Flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.multicontenedor1 h6{
+    margin-bottom: 7px;
+}
+
+.lineasistema1{
+    height: 2px;
+    width: 500px;
+    background: var(--color-primario);
+    margin-left: 535px;
+    margin-top: -2px;
+}
+
+.multi-diagnostico {
+    padding: 0 80px;
+}
+
+.multi-diagnostico p{
+    padding-right: 40%;
+}
+.imagenes-sintomas {
+    justify-content: left;
+    align-items: flex-end;
+    margin-bottom: 0;
+}
+
+.imagenes-sintomas img{
+    width: 430px;
+    height: 604px;
+    border-radius: 50px;
+}
+
+.imagenes-sintomas h6{
+    margin-bottom: 7px;
+}
+
+.linea-sintomas{
+    height: 2.5px;
+    width: 530px;
+    background: var(--color-primario);
+    margin-left: 615px;
+    margin-top: -2.5px;
+}
+
+.btn-sintomas {
+    display: revert;
+    width: 238px;
+}
+
+.multi-evolucion {
+    padding: 0 80px;
+}
+
+.multi-evolucion p{
+    padding-right: 40%;
+}
+
+.multi-evolucion img{
+    width: 486px;
+}
+
+.multi-tratamientos {
+    padding: 0 80px;
+}
+
+.multi-tratamientos p{
+    padding-right: 40%;
+}
+
+.contenedor-multitratamientos{
+    display: flex;
+    align-items: flex-end;
+}
+
+.contenedor-multitratamientos img{
+    width: 770px;
+    margin: 0 0;
+}
+
+.contenedor-multitratamientos h6{
+    margin-bottom: 7px;
+}
+
+.linea-tratamientos{
+    height: 2.5px;
+    width: 390px;
+    background: var(--color-primario);
+    margin-left: 615px;
+    margin-top: -2.5px;
+}
+
+.multi-atencion {
+    padding: 0 80px;
+    padding-right: 50%;
+}
+
+.mapa{
+    height: 729px;
+    margin-bottom: -41px;
+}
+
+.multi-atencion input{
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+}
+
+/*---------------------------- Pagina 6 Estrategia ----------------------------*/
+.imagen-fondo-estrategias {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/banner\ estrategia.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen-fondo-estrategias .banner-home h1{
+    padding: 0 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+.estrategia-dequetrata1{
+    padding: 0 20px;
+}
+
+.estrategia-dequetrata1 h3{
+    padding: 0 0;
+    margin: 20px 0px;
+}
+
+.estrategia-dequetrata1 iframe{
+    margin: 40px 0px;
+}
+
+/*-------- pagina 6 estrategia- seccion 2*/
+
+.estrategia-dequetrata2{
+    padding: 0 20px;
+}
+
+.estrategia-dequetrata2 h3{
+    padding: 0 0;
+    margin: 20px 0px;
+}
+
+.contenedor-btn-estrategia1{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.estrategia-dequetrata2 img{
+    border-radius: 50px;
+    width: 100%;
+}
+
+/*-------- pagina 6 estrategia - seccion 3 */
+
+.estrategia-novedades-relacionadas {
+    padding: 0 20px;
+}
+
+.estrategia-novedades-relacionadas h3 {
+    padding: 0 0;
+    margin: 20px 0px;
+}
+
+.contenedor-estrategia-novedades{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.estrategia-caja{
+    height: 338px;
+    width: 174px;
+    background-color: var(--color-cuaternario);
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.estrategia-caja img{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.estrategia-caja h4{
+    padding: 0 6px;
+}
+.estrategia-caja p{
+    padding: 0 6px;
+}
+.estrategia-caja h6{
+    padding: 0 6px;
+}
+.estrategia-caja a{
+    padding: 0 6px;
+}
+
+.contenedor-btn-estrategia2 {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.estrategia-caja .leer-mas-novedades {
+    margin-bottom: 10px;
+}
+/*---------------------------- Pagina 6 Estrategia - Responsive ----------------------------*/
+
+@media (min-width:980px) {
+
+.imagen-fondo-estrategias {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.imagen-fondo-estrategias .banner-home h1 {
+    margin-top: 10px;
+}
+
+.estrategia-dequetrata1{
+    padding: 0 80px;
+}
+
+.estrategia-dequetrata1 p{
+    padding-right: 42%;
+}
+
+.estrategia-dequetrata1 iframe{
+    height: 691px;
+}
+.estrategia-dequetrata1 h2{
+    font-size: 25px;
+}
+
+/*-------- pagina 6 estrategia- seccion 2 - Responsive */
+
+.estrategia-dequetrata2{
+    padding: 0 80px;
+}
+
+.estrategia-dequetrata2 p{
+    padding-right: 43%;
+}
+
+.contenedor-btn-estrategia1{
+    text-align: left;
+}
+
+.estrategia-dequetrata2 img{
+    border-radius: 40px;
+}
+
+
+/*-------- pagina 6 estrategia- seccion 3 - Responsive */
+
+.estrategia-novedades-relacionadas{
+    padding: 0 80px;
+}
+
+.estrategia-caja{
+    width: 320px;
+    height: 520px;
+}
+
+.contenedor-btn-estrategia2{
+    text-align: center;
+}
+
+.estrategia-caja h4 {
+    padding: 0 15px;
+}
+.estrategia-caja p {
+    padding: 0 15px;
+}
+.estrategia-caja h6 {
+    padding: 0 15px;
+}
+.estrategia-caja a {
+    padding: 0 15px;
+}
+}
+
+/*-------- pagina 7 Cuidadores */
+
+.imagen-fondo-cuidadores {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/banner\ cuidadores.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen-fondo-cuidadores h1{
+    margin-top: 40px;
+}
+
+.cuidadores-comunidad{
+    padding: 0 20px;
+}
+
+.cuidadores-comunidad h3{
+    padding: 0 0;
+}
+
+.contenedor-cuidadores-comunidad{
+    width: 100%;
+    height: 560px;
+    margin-bottom: -40px;
+    max-height: 590px;
+    min-width: 320px;
+    overflow: hidden;
+}
+
+.cajaroja{
+    width: 100%;
+    height: 257px;
+    background-color: var(--color-primario);
+    border-radius: 30px;
+    margin-bottom: -30px;
+    margin-top: 50px;
+    padding: 0 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+}
+
+.cajaroja h3{
+    margin-bottom: 10px;
+}
+
+.contenedor-cuidadores-comunidad img{
+    width: 100%;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 2 */
+
+.cuidadores-video{
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.cuidadores-video h3{
+    margin: 30px 0;
+    padding: 0;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 3 */
+.cuidadores-quien{
+    padding: 0 20px;
+}
+
+.cuidadores-quien h3{
+    padding: 0;
+    margin: 30px 0;
+}
+.texto-1{
+    margin-bottom: 50px;
+}
+
+.contenedor-quien-señor img {
+    width: 100%;
+    border-radius: 40px;
+    
+}
+
+.contenedor-quien-señor{
+    margin-bottom: 40px;
+    width: 100%;
+    height: 501px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-cuaternario);
+    border-radius: 40px 40px 0 0;
+}
+
+.contenedor-textos-señor{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px ;
+}
+
+
+
+/*-------- pagina 7 Cuidadores - seccion 4 */
+
+.contenedor-quien-parte{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contenedor-quien-parte article{
+    width: 173px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    background-color: var(--color-cuaternario);
+    border-radius: 20px 20px 0 0;
+}
+.contenedor-quien-parte article h4{
+    padding: 0 10px;
+}
+.contenedor-quien-parte article p {
+    padding: 0 10px;
+}
+
+.contenedor-quien-parte article h6 {
+    padding: 0 10px;
+}
+
+.contenedor-quien-parte article a {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-quien-parte article img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contenedor-btn-cuidadores1{
+    text-align: center;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 5 */
+
+.cuidadores-actividades{
+}
+.cuidadores-actividades h3{
+    margin: 20px 0;
+}
+.cuidadores-actividades p{
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-actividades{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-actividades article{
+    width: 100%;
+    height: 468px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    background-color: var(--color-cuaternario);
+    padding: 0 20px;
+}
+
+.actividades-caja1{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.actividades-caja2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.contenedor-actividades article p {
+    padding: 0;
+}
+
+.contenedor-actividades img{
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 20px;
+    max-width: fit-content;
+    margin-bottom: 10px;
+}
+
+/*-------- pagina 7 Cuidadores - Responsive */
+
+@media (min-width:980px) {
+
+.imagen-fondo-cuidadores {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+/*-------- pagina 7 Cuidadores - seccion 1 - responsive */
+
+
+.cuidadores-comunidad{
+    padding: 0 80px;
+}
+.contenedor-cuidadores-comunidad{
+    display: flex;
+    flex-direction: row;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.cajaroja{
+    width:547px;
+    height: 100%;
+    margin: 0;
+    min-width: 547px;
+}
+
+.contenedor-cuidadores-comunidad img{
+    height: 560px;
+    width: 841px;
+    margin-left: -35px;
+   
+}
+/*-------- pagina 7 Cuidadores - seccion 2 - responsive */
+
+.cuidadores-video{
+    padding: 0 80px;
+}
+
+.cuidadores-video iframe{
+    height: 640px;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 3 - responsive */
+
+.cuidadores-quien{
+    padding: 0 80px;
+}
+
+.texto-1{
+    padding-right: 40%;
+}
+
+.contenedor-quien-señor{
+    width: 90%;
+    height: 265px;
+    display: flex;
+    Flex-wrap: wrap;
+    border-radius: 40px 0 0px 40px;
+}
+
+.contenedor-quien-señor a{
+    font-size: 16px;
+}
+.contenedor-quien-señor img{
+    height: 100%;
+    width: 431px;
+    border-radius: 40px;
+}
+
+.contenedor-textos-señor{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-right: 10%;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 4 - responsive */
+
+.contenedor-quien-parte{
+    padding-right: 10%;
+    justify-content: space-between;
+}
+
+.contenedor-quien-parte article{
+    width: 600px;
+    height:633px;
+    margin: 0;
+    background-color: var(--color-cuaternario);
+    border-radius: 40px 40px 0 0;
+}
+.contenedor-quien-parte article h4 {
+    padding: 0 30px;
+}
+
+.contenedor-quien-parte article p {
+    padding: 0 30px;
+}
+
+.contenedor-quien-parte article h6 {
+    padding: 0 30px;
+}
+
+.contenedor-quien-parte article a {
+    padding: 0 30px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+.contenedor-quien-parte article img{
+    border-radius: 40px;
+}
+
+.contenedor-btn-cuidadores1{
+    margin: 30px 0;
+}
+
+/*-------- pagina 7 Cuidadores - seccion 5 - responsive */
+
+.cuidadores-actividades{
+    padding: 0 80px;
+
+}
+.cuidadores-actividades h3{
+    padding: 0;
+}
+.cuidadores-actividades p{
+    padding: 0;
+}
+
+.contenedor-actividades article{
+    padding: 0;
+    display: flex;
+    Flex-wrap: wrap;
+    height: 285px;
+    width: 90%;
+    border-radius: 50px 0 0 50px;
+}
+
+.contenedor-actividades article img{
+    margin: 0;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.actividades-caja1{
+    width: 55%;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contenedor-actividades a{
+    display: none;
+}
+
+.contenedor-actividades .contenedor-articulo2{
+    display: flex;
+    flex-direction:row-reverse; 
+    border-radius: 0 50px 50px 0;
+}
+
+.actividades-caja2 {
+    width: 50%;
+    margin-right: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+}
+
+/*---------------------------- Pagina 8 Que es ema? - seccion 1 ----------------------------*/
+
+.imagen-fondo-quesema {
+    width: 100%;
+    height: 332px;
+    background-image: url(img/banner\ quesema.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.imagen-fondo-quesema .banner-home h1{
+    margin-top: 20px;
+}
+
+.quesema-video1{
+    padding: 0 20px;
+}
+
+.quesema-video1 p{
+    margin: 40px 0;
+}
+
+
+/* Pagina 8 Que es ema? - seccion 2 ----*/
+
+.quesema-paciente {
+    padding: 0 20px;
+}
+
+.quesema-paciente p{
+    margin: 30px 0;
+}
+
+.quesema-paciente img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.quesema-paciente h6{
+    margin-bottom: 10px;
+}
+
+/* Pagina 8 Que es ema? - seccion 3 ----*/
+
+.como-sostenemos{
+    padding: 0 20px;
+}
+
+.como-sostenemos h3{
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contenedor-sostenemos{
+    margin: 20px 0;
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-sostenemos figure{
+    width:155px;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedor-sostenemos figure img{
+    width: 100%;
+}
+
+.contenedor-sostenemos figure p{
+    text-align: center;
+    width: 100px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.como-sostenemos h5{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+/* Pagina 8 Que es ema? - seccion 4 ----*/
+
+.quesema-nuestras-areas .nuestras-areas .areas {
+    padding: 0 7px;
+
+}
+
+.quesema-nuestras-areas .nuestras-areas .areas article{
+    width: 174px;
+    height: 216px;
+}
+
+/* Pagina 8 Que es ema? - seccion 5 ----*/
+
+.quesema-asesoramiento{
+    display: none;
+}
+
+/* Pagina 8 Que es ema? - seccion 6 ----*/
+
+.quesema-equipo{
+    padding: 0 20px;
+}
+.quesema-equipo h3{
+    padding: 0;
+    margin: 20px 0;
+}
+.quesema-equipo p{
+    margin: 20px 0;
+}
+
+.contenedor-equipo{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-equipo figure{
+    width: 162px;
+    height: 237px;
+    margin: 6px;
+}
+.contenedor-equipo figure img{
+    width: 100%;
+}
+.contenedor-equipo p{
+    margin: 0;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 3px;
+    color: var(--color-primario);
+    font-weight: bold;
+}
+
+.contenedor-equipo h6{
+    text-align: center;
+    color: var(--color-primario);
+}
+
+.caja-boton-equipo{
+   display: flex; 
+   justify-content: center;
+   align-items: center;
+}
+
+/*---------------------------- Pagina 8 Que es ema? - Responsive ----------------------------*/
+
+@media (min-width:980px) {
+
+    .imagen-fondo-quesema {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+.quesema-video1{
+    padding: 0 80px;
+}
+
+.quesema-video1 p{
+    padding-right: 43%;
+}
+    
+.quesema-video1 iframe{
+    height: 660px;
+}
+
+/* Pagina 8 Que es ema? - seccion 2 Responsive ----*/
+
+.quesema-paciente{
+    padding: 0 80px;
+}
+.quesema-paciente p{
+    padding-right: 43%;
+}
+
+.contenedor-quesema-paciente{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.contenedor-quesema-paciente img{
+    width: 774px;
+    margin: 0;
+    border-radius: 40px;
+}
+
+.contenedor-quesema-paciente h6{
+    margin-left: 20px;
+}
+.quesema-paciente .linea-sintomas{
+    width: 33%;
+}
+
+/* Pagina 8 Que es ema? - seccion 3 Responsive ----*/
+
+.como-sostenemos{
+    padding: 0 80px;
+}
+
+.contenedor-sostenemos figure{
+    width: 258px;
+    height: 361px;
+}
+
+.contenedor-sostenemos figure p{
+    width: 80%;
+}
+
+/* Pagina 8 Que es ema? - seccion 4 Responsive ----*/
+
+.quesema-nuestras-areas{
+    display: none;
+}
+
+/* Pagina 8 Que es ema? - seccion 5 Responsive ----*/
+.quesema-asesoramiento{
+    display: revert;
+    padding: 0 80px;
+}
+
+.quesema-asesoramiento .separador{
+    margin-left: -80px;
+}
+
+.quesema-asesoramiento h3{
+    padding: 0;
+    margin: 30px 0;
+}
+
+.quesema-asesoramiento article{
+    width: 330px;
+    background-color: var(--color-cuaternario);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-radius: 40px 40px 0 0;
+}
+
+.quesema-asesoramiento img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 40px;
+}
+
+.contenedor-asesoramiento{
+    display: flex;
+    Flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-asesoramiento article h4{
+    padding: 0 10px;
+}
+
+.contenedor-asesoramiento article p {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-asesoramiento article h6 {
+    padding: 0 10px;
+    color: var(--color-primario);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contenedor-asesoramiento article a {
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-asesoramiento article div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Pagina 8 Que es ema? - seccion 6 Responsive ----*/
+
+.quesema-equipo{
+    padding: 0 80px;
+}
+.quesema-equipo p{
+    padding-right: 43%;
+}
+
+.quesema-equipo figure p{
+    padding: 0;
+}
+
+.contenedor-equipo figure{
+    width: 257px;
+    height: 350px;
+}
+
+.contenedor-boton-equipo figure{
+    height: 100%;
+}
+
+}
+
+/*-------------- FIN ---------------*/
